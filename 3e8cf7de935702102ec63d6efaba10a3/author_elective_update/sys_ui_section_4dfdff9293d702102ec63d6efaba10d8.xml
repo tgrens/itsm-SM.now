@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="incident" section_id="4dfdff9293d702102ec63d6efaba10d8" sys_domain="global" table="incident" version="3" view="Common_Service_Desk">
+        <sys_ui_section action="DELETE">
+            <caption>incident</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-07-12 12:07:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4dfdff9293d702102ec63d6efaba10d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ITSM SM.now" source="x_984628_itsm_sm_n">3e8cf7de935702102ec63d6efaba10a3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ITSM SM.now">3e8cf7de935702102ec63d6efaba10a3</sys_scope>
+            <sys_update_name>sys_ui_section_4dfdff9293d702102ec63d6efaba10d8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-07-12 12:07:36</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Common Service Desk" name="Common_Service_Desk">05fdff9293d702102ec63d6efaba10d4</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ITSM SM.now">3e8cf7de935702102ec63d6efaba10a3</application>
+        <file_path/>
+        <instance_id>4cf9a124dbde795837d72a59139619dc</instance_id>
+        <instance_name>dev199902</instance_name>
+        <name>sys_ui_section_4dfdff9293d702102ec63d6efaba10d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="incident" section_id="4dfdff9293d702102ec63d6efaba10d8" sys_domain="global" table="incident" version="3" view="Common_Service_Desk"><sys_ui_section action="INSERT_OR_UPDATE"><caption>incident</caption><header>false</header><name>incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-12 12:07:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4dfdff9293d702102ec63d6efaba10d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_overrides/><sys_package display_value="ITSM SM.now" source="x_984628_itsm_sm_n">3e8cf7de935702102ec63d6efaba10a3</sys_package><sys_policy/><sys_scope display_value="ITSM SM.now">3e8cf7de935702102ec63d6efaba10a3</sys_scope><sys_update_name>sys_ui_section_4dfdff9293d702102ec63d6efaba10d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-12 12:07:36</sys_updated_on><sys_user/><title>false</title><view display_value="Common Service Desk" name="Common_Service_Desk">05fdff9293d702102ec63d6efaba10d4</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1679096285</payload_hash>
+        <record_name>Incident</record_name>
+        <reverted_from/>
+        <source>728cf7de935702102ec63d6efaba10a8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-12 12:07:37</sys_created_on>
+        <sys_id>85fdff9293d702102ec63d6efaba10dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190a6d777b60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-12 12:07:37</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>0dfdff92bad702105dbfda9b63df05db</update_guid>
+        <update_guid_history>0dfdff92bad702105dbfda9b63df05db:1679096285</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-12 12:14:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>95427077818d49d092dc9c33ea611040</sys_id>
+        <sys_metadata>4dfdff9293d702102ec63d6efaba10d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_package display_value="ITSM SM.now" source="x_984628_itsm_sm_n">3e8cf7de935702102ec63d6efaba10a3</sys_package>
+        <sys_parent display_value="Incident">9fe7f788e492021008dda4ccc40080ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ITSM SM.now">3e8cf7de935702102ec63d6efaba10a3</sys_scope>
+        <sys_scope_delete display_value="">83ca5e96f73041c488dd762fa3769a04</sys_scope_delete>
+        <sys_update_name>sys_ui_section_4dfdff9293d702102ec63d6efaba10d8</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_4dfdff9293d702102ec63d6efaba10d8">85fdff9293d702102ec63d6efaba10dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-12 12:14:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

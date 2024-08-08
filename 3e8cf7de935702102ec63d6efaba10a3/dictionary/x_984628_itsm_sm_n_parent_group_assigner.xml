@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e6c2e7cb83bf4210f8089e30ceaad33e" extends="sys_import_set_row" label="ParentGroupAssigner" max_length="40" name="x_984628_itsm_sm_n_parent_group_assigner" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Group" label="Group" max_length="40" name="u_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parent Group" label="Parent Group" max_length="40" name="u_parent_group" type="string"/>
+    </element>
+</database>

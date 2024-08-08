@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_984628_itsm_sm_n.ParentGroupAssigner</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ParentGroupAssigner</name>
+        <script><![CDATA[class ParentGroupAssigner {
+
+
+    getGroupConfiguration(attachmentSysId) {
+        let groupConfigs = new Set();
+
+        var parser = new sn_impex.GlideExcelParser();
+        var attachment = new GlideSysAttachment();
+        var attachmentStream = attachment.getContentStream(attachmentSysId);
+        parser.parse(attachmentStream);
+
+        while (parser.next()) {
+            var row = parser.getRow();
+            groupConfigs.add(this.prepareData(row));
+        }
+
+        return groupConfigs;
+    }
+
+    getAttachmentSysId(name) {
+        let sysId = '';
+        const query = 'file_name=' + name + '^table_name=sys_script_include';
+        let record = x_984628_core_sm_n.GlideUtils.getGlideRecord('sys_attachment', query);
+
+        if (record.next()) {
+            sysId = record.getValue('sys_id');
+        }
+
+        return sysId;
+    }
+
+
+    prepareData(row) {
+        let groupConfig = {
+            "parent": row['Parent Group'],
+            "childe": row['Group']
+        };
+
+        return groupConfig;
+    }
+
+
+    assignParentGroup(groupConfigs) {
+        for (const groupConfig of groupConfigs) {
+            gs.info(JSON.stringify(groupConfig));
+        }
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-08 14:53:12</sys_created_on>
+        <sys_id>29b66f0383ff4210f8089e30ceaad3ef</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>ParentGroupAssigner</sys_name>
+        <sys_package display_value="ITSM SM.now" source="x_984628_itsm_sm_n">3e8cf7de935702102ec63d6efaba10a3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ITSM SM.now">3e8cf7de935702102ec63d6efaba10a3</sys_scope>
+        <sys_update_name>sys_script_include_29b66f0383ff4210f8089e30ceaad3ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-08 15:23:43</sys_updated_on>
+    </sys_script_include>
+</record_update>
