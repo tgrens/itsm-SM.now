@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>ignore</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="ParentGroupAssigner TM">2c8ae61883001210f8089e30ceaad380</map>
+        <reference_value_field/>
+        <source_field>[Script]</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+    return x_984628_core_sm_n.UserManagementUtils.getUserByEmailAdress(source.u_manager);
+
+})(source);]]></source_script>
+        <source_table>x_984628_itsm_sm_n_parent_group_assigner</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 06:24:56</sys_created_on>
+        <sys_id>9cfe52b883101210f8089e30ceaad376</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>[Script]</sys_name>
+        <sys_package display_value="ITSM SM.now" source="x_984628_itsm_sm_n">3e8cf7de935702102ec63d6efaba10a3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ITSM SM.now">3e8cf7de935702102ec63d6efaba10a3</sys_scope>
+        <sys_update_name>sys_transform_entry_9cfe52b883101210f8089e30ceaad376</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 06:51:13</sys_updated_on>
+        <target_field>manager</target_field>
+        <target_table>sys_user_group</target_table>
+        <use_source_script>true</use_source_script>
+    </sys_transform_entry>
+</record_update>
