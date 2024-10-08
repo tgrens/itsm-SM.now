@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.detail_row=short_description,all_tables.display_color=priority,all_tables.live_feed=true,all_tables.text_index_translations=true,extension_model=hierarchy,hasListeners=true,kagami_csindex_enabled=true,largeTable=true,reference_index_include=active" db_object_id="7b35bf08e412021008dda4ccc4008004" label="Task" max_length="40" name="task" text_index="true" type="collection">
+        <element label="Software package" max_length="32" name="x_984628_itsm_sm_n_software_package" reference="cmdb_ci_spkg" type="reference"/>
+        <element label="Software Instance" max_length="32" name="x_984628_itsm_sm_n_software_instance" reference="cmdb_software_instance" reference_qual="sys_created_on-- oper ---- value --^EQ" reference_qual_condition="sys_created_on-- oper ---- value --^EQ" type="reference"/>
+    </element>
+</database>
